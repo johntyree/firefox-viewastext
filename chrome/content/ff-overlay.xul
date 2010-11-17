@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://viewastext/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://viewastext/locale/overlay.dtd">
+<overlay id="viewastext-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="viewastext-strings" src="chrome://viewastext/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+    <menuitem id="context-viewastext" label="&viewastextContext.label;"
+              accesskey="&viewastextContext.accesskey;"
+              insertafter="context-stop"
+              oncommand="viewastext.onMenuItemCommand(event)"/>
+  </popup>
+
+
+
+
+</overlay>

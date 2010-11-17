@@ -1,0 +1,8 @@
+<!ENTITY viewastext.label "Your localized menuitem">
+<!ENTITY viewastextContext.label "Your Menuitem">
+<!ENTITY viewastextContext.accesskey "Y">
+<!ENTITY viewastextToolbarButton.label "Your Toolbar Button">
+<!ENTITY viewastextToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY viewastextSidebar.label "Your Sidebar">
+<!ENTITY viewastextToolbar.name  "example">
+<!ENTITY viewastextToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &viewastextToolbar.name;">
