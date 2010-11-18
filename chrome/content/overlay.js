@@ -25,23 +25,23 @@ var viewastext = {
         client.send();
         client.onreadystatechange = function() {
             if(this.readyState == 4) {
-                var newTab = gBrowser.getBrowserForTab(gBrowser.addTab());
+                var newTab = gBrowser.addTab();
+                var newTabBrowser = gBrowser.getBrowserForTab(newTab);
                 gBrowser.selectedTab = newTab;
-                newTab.addEventListener("load", function () {
-                    var doc = newTab.contentDocument;
+                newTabBrowser.addEventListener("load", function () {
+                    var doc = newTabBrowser.contentDocument;
                     var regex = "/?([^/]*)$";
-                    doc.title = unescape(link_url.match(regex)[1]);
+                    /*This breaks everything.*/
                     /*doc.URL = link_url;*/
-                    so_clearInnerHTML(doc.body);
                     var pre = doc.createElement('pre');
                     var tn = doc.createTextNode(client.responseText);
+                    doc.title = unescape(link_url.match(regex)[1]);
                     pre.appendChild(tn);
                     doc.body.appendChild(pre);
                 }, true)
             }
         }
     },
-
 };
 
 window.addEventListener("load", viewastext.onLoad, false);
