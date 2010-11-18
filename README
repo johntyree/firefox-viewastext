@@ -1,2 +1,8 @@
 A simple context-menu plugin to facilitate opening an arbitrary resource as
-plain text.
+plain text (text/plain).
+
+Known Issues:
+Doesn't set the URL property of the new page.
+Doesn't allow "View-Source" on the new page, although this is a bit
+redundant.
+Technically the new page is still mimetype: text/html.
