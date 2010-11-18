@@ -1,6 +1,10 @@
 A simple context-menu plugin to facilitate opening an arbitrary resource as
 plain text (text/plain).
 
+You want to read a file online. It might be source code. It might not. Who
+cares? The point is you know it's a plain text file and you want to view it
+in the browser - NOW!
+
 Known Issues:
 Doesn't set the URL property of the new page.
 Doesn't allow "View-Source" on the new page, although this is a bit
