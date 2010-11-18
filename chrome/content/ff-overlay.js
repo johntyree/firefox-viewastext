@@ -5,7 +5,7 @@ viewastext.onFirefoxLoad = function(event) {
 
 viewastext.showFirefoxContextMenu = function(event) {
   // show or hide the menuitem based on what the context menu is on
-  var hidden = (gContextMenu.onLink && !gContextMenu.onImage);
+  var hidden = !gContextMenu.onLink || gContextMenu.onImage;
   document.getElementById("context-viewastext").hidden = hidden;
 };
 
