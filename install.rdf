@@ -4,7 +4,7 @@
     <em:id>viewastext@john.tyree</em:id>
     <em:type>2</em:type>
     <em:name>View as text</em:name>
-    <em:version>0.3</em:version>
+    <em:version>1.0</em:version>
     <em:creator>John Tyree</em:creator>
     <em:contributor></em:contributor>
     <em:description>View things as if they had a text/plain mime-type.</em:description>
